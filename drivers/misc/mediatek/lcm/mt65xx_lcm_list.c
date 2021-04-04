@@ -23,6 +23,12 @@ LCM_DRIVER *lcm_driver_list[] = {
 #if defined(MTK_LCM_DEVICE_TREE_SUPPORT)
 	&lcm_common_drv,
 #else
+#if defined(JD9365_DSI_VDO_HOLITECH_HD720)
+	&jd9365_dsi_vdo_holitech_hd720_lcm_drv,
+#endif
+#if defined(ILI9881C_DSI_VDO_DJ_HD720)
+	&ili9881c_dsi_vdo_dj_hd720_lcm_drv,
+#endif
 #if defined(OTM1284A_HD720_DSI_VDO_TM)
 	&otm1284a_hd720_dsi_vdo_tm_lcm_drv,
 #endif
